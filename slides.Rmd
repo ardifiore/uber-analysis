@@ -1,0 +1,57 @@
+---
+title: "Uber Review Analysis"
+subtitle: "Developing Data Products JHU Coursera Course Project"
+author: "Anthony DiFiore"
+date: "2025/03/13"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: inverse
+
+#About the Data:
+
+*   **Source:** “Uber Customer Reviews Dataset (2024)” from Kaggle
+*   **Content:** 1,200 reviews from the Google Play Store
+*   **Details:** Ratings (1–5), user feedback, and review times
+*   **Preparation:** Data is cleaned and anonymized
+*   **Focus:** Explore sentiment patterns, common word pairs (bigrams), and word frequency trends
+
+```{r echo=FALSE}
+knitr::include_graphics("dataset-cover.jpg")
+```
+---
+class: inverse
+
+#How to Use the Dashboard:
+
+###**Page 1** – Treemap & Reviews:
+*   **Select Sentiment:** Choose sentiment (All/Positive/Negative) and then click on the interactive treemap to zoom in on the most common bigrams per Uber score
+*   **Uber Score Reviews Table:** The reviews table below the treemap displays full review texts based on your selection
+
+###**Page 2** – Wordcloud:
+*   **Toggle Sentiment:** Use radio buttons to select “Positive” or “Negative” reviews
+*   **Frequency Slider:** Set the minimum word frequency to update the wordcloud in real-time
+
+---
+class: inverse, center, middle
+
+.center[
+#[Click here](https://ardifiore.shinyapps.io/uber-review-analysis/) to visit the dashboard!
+
+####Afterwards, [click here](https://github.com/ardifiore/uber-analysis) to visit our GitHub repository
+]
+
+---
+class: inverse
+
+## References & Citations
+
+*   Data Source: Uber Customer Reviews Dataset (2024) – Kaggle DOI: [https://doi.org/10.34740/KAGGLE/DSV/10248932](https://doi.org/10.34740/KAGGLE/DSV/10248932)
+*   Lexicons: VADER, Bing, NRC Emotion, and AFINN
+*   Key R Packages: bs4Dash, shinydashboard, tidyverse, d3treeR, DT, wordcloud2, viridis, tidytext
+*   Further Reading: Click the provided links for more details on each resource
